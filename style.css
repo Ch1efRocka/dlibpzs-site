@@ -1,0 +1,154 @@
+/* Общие стили для страницы */
+
+/* Новая строка: сброс стандартных отступов и полей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* чтобы размеры блоков считались предсказуемо */
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Новая строка: шрифт по умолчанию */
+    background-color: #f2f2f2; /* Новая строка: светло-серый фон страницы */
+    color: #333; /* Новая строка: основной цвет текста */
+    line-height: 1.6; /* немного увеличиваем интерлиньяж */
+  }
+  
+  /* Шапка сайта */
+  header {
+    background-color: #fafafa; /* Новая строка: светлый фон для шапки */
+    padding: 20px;
+    border-bottom: 2px solid #ccc; /* Новая строка: нижняя рамка */
+  }
+  
+  .header-content {
+    display: flex; /* Новая строка: располагаем элементы горизонтально */
+    flex-wrap: wrap; /* Новая строка: при узком экране элементы переносятся */
+    align-items: center; /* Выравниваем по центру по вертикали */
+  }
+  
+  /* Логотип гильдии */
+  .guild-emblem {
+    width: 100px; /* Новая строка: фиксируем ширину, можно менять */
+    height: auto;
+    margin-right: 20px; /* отступ справа, чтобы не прилипало к тексту */
+  }
+  
+  /* Заголовок гильдии в шапке */
+  .header-content h1 {
+    font-size: 1.5rem; /* Новая строка: размер шрифта заголовка */
+    margin-bottom: 5px;
+  }
+  
+  /* Короткое описание под заголовком */
+  .header-content p {
+    margin: 0;
+    font-style: italic; /* чуть выделяем курсивом */
+  }
+  
+  /* Навигационная панель */
+  .main-nav {
+    /* Новая строка: фон-изображение с белками и синими кружками.
+       Нужно заменить squirrels-bg.png на реальный файл, который отобразит белок.
+       repeat-x указывает, что фоновое изображение повторяется по горизонтали. */
+    background: url("images/squirrels-bg.png") repeat-x center;
+    height: 50px; /* Высота полосы навигации */
+    margin-top: 20px; /* отступ сверху, чтобы не сливалось с шапкой */
+    display: flex; /* используем flex для внутреннего выравнивания */
+    align-items: center; /* выравниваем элементы по вертикали по центру */
+  }
+  
+  .main-nav ul {
+    list-style: none; /* убираем маркеры списка */
+    display: flex; /* располагаем ссылки горизонтально */
+    margin-left: 20px; /* небольшой отступ слева */
+  }
+  
+  .main-nav li {
+    margin-right: 15px; /* отступ между ссылками */
+  }
+  
+  .main-nav a {
+    color: #fff; /* делаем ссылки белыми на фоне картинки */
+    text-decoration: none; /* убираем подчеркивание */
+    font-weight: bold;
+    padding: 5px 10px; /* небольшие внутренние отступы */
+    border-radius: 5px; /* скругляем углы */
+    background-color: rgba(0, 0, 0, 0.3); /* легкая полупрозрачная подложка */
+    transition: background-color 0.3s ease; /* анимация при наведении */
+  }
+  
+  .main-nav a:hover {
+    background-color: rgba(0, 0, 0, 0.6); /* затемняем подложку при наведении */
+  }
+  
+  /* Основной контент */
+  main {
+    max-width: 1000px; /* фиксируем максимальную ширину для удобочитаемости */
+    margin: 20px auto; /* выравниваем по центру */
+    padding: 0 20px; /* отступы по бокам */
+  }
+  
+  /* Раздел "О гильдии" */
+  .about {
+    background-color: #fff; /* белый фон */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* скругляем углы блока */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* легкая тень */
+  }
+  
+  .about h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Раздел "Гайды" */
+  .guides {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .guides h2 {
+    margin-bottom: 10px;
+  }
+  
+  .guides ul {
+    list-style: square inside; /* метки в виде квадратиков внутри блока */
+    margin-left: 0; /* сбрасываем отступы, чтобы list-style работал */
+    padding-left: 0; /* сбрасываем внутренний отступ */
+  }
+  
+  .guides li {
+    margin-bottom: 5px;
+  }
+  
+  /* Раздел "Статистика" */
+  .stats {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .stats h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Подвал */
+  footer {
+    background-color: #fafafa;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #ccc; /* тонкая рамка сверху */
+    margin-top: 40px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem; /* чуть уменьшим шрифт */
+  }
+  
