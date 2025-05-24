@@ -143,6 +143,7 @@ main {
 .stats h2 {
   color: #4f2c13;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 /* Секция "Гайды" */
@@ -230,4 +231,40 @@ footer p {
 .floating-squirrel img {
   width: 200px;
   height: auto;
+}
+
+/* Статистический блок */
+.stat-block {
+  margin-top: 20px;
+}
+
+.stat-block h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #4f2c13;
+}
+
+.stat-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.stat-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.show-more-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #d1b59e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #3b2b19;
+  font-weight: bold;
+}
+
+.show-more-button:hover {
+  background-color: #c1a282;
 }
