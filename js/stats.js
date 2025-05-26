@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const endpoints = [
         {
-            url: "http://46.17.106.198:5000/api/stats/resources?type=bricks_cnt&max=999",
+            url: "https://ch1efrocka.ru/api/stats/resources?type=bricks_cnt&max=999",
             title: "🧱 Наши новички - каменщики"
         },
         {
-            url: "http://46.17.106.198:5000/api/stats/resources?type=wood_cnt&max=999",
+            url: "https://ch1efrocka.ru/api/stats/resources?type=wood_cnt&max=999",
             title: "🌳 Дровосеки до 100%"
         },
         {
-            url: "http://46.17.106.198:5000/api/stats/resources?type=wood_cnt",
+            url: "https://ch1efrocka.ru/api/stats/resources?type=wood_cnt",
             title: "🌳 Главные дровосеки леса"
         }
     ];
